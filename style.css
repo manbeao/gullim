@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-body{
-    height: 11947px;
-}
-header {
-    width: 100%;
-    height: 82px;
-    background: #FF9CBA;
-    box-shadow: 0px 2px 15.1px 0px rgba(0, 0, 0, 0.25);
-    margin: auto;
-    display: fixed;
-=======
 body {
     height: 11947px;
     -webkit-scrollbar-track: pink;
@@ -32,28 +20,21 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
     background-color: #FF6996;
->>>>>>> 13be555 (.)
+}
+
+.dn {
+    display: none;
 }
 
 h3 {
     color: #292929;
-<<<<<<< HEAD
-    -webkit-text-stroke-width: 1;
-=======
     -webkit-text-stroke-width: 2;
->>>>>>> 13be555 (.)
     -webkit-text-stroke-color: #3E3E3E;
     font-family: 'MapoBackpacking';
     font-size: 71px;
     font-style: normal;
-<<<<<<< HEAD
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4.26px;
-=======
     font-weight: 600;
     line-height: normal;
->>>>>>> 13be555 (.)
 }
 
 p {
@@ -65,8 +46,6 @@ p {
     font-weight: 400;
     line-height: 32px;
     letter-spacing: -1px;
-<<<<<<< HEAD
-=======
 }
 
 header {
@@ -114,7 +93,7 @@ nav {
 }
 
 nav .mail {
-    display: none;
+
     background: rgba(255, 156, 186, 0.58);
     position: absolute;
     top: 0px;
@@ -125,7 +104,6 @@ nav .mail {
 }
 
 .call {
-    display: none;
     background: rgba(255, 156, 186, 0.58);
     position: absolute;
     top: 102px;
@@ -223,7 +201,7 @@ main button {
 .page2 h3 {
     position: relative;
     top: -400px;
-    text-align: center;
+    left: 790px;
 }
 
 .page2 img {
@@ -261,8 +239,7 @@ main button {
 
 .page3 h3 {
     position: relative;
-    text-align: right;
-    right: 470px;
+    left: 870px;
     top: 230px;
     letter-spacing: 4.26px;
     font-size: 71px;
@@ -284,12 +261,12 @@ main button {
 .page3 p {
     position: absolute;
     width: 546px;
-    text-align: right;
     font-size: 20px;
     line-height: 39px;
     letter-spacing: -0.6px;
+    text-align: right;
     top: 350px;
-    right: 475px;
+    left: 870px;
 }
 
 /* -------------------page3----------------------- */
@@ -335,8 +312,8 @@ main button {
 }
 
 .page4 .image1 {
-    position: relative;
-    top: -960px;
+    position: absolute;
+    top: 110px;
     left: 190px;
 }
 
@@ -364,9 +341,9 @@ main button {
 
 /* -------------------page4------------------- */
 .page5 {
-    position: relative;
-    top: -2000px;
     height: auto;
+    position: relative;
+    top: -1000px;
     z-index: -9999;
 
 }
@@ -391,7 +368,6 @@ main button {
 
 
 .page5 p {
-    /* display: none; */
     position: absolute;
     color: #FF5C5C;
     -webkit-text-stroke-color: #FF5C5C;
@@ -412,38 +388,32 @@ main button {
 }
 
 .page5 p.js1 {
-    /* display: none; */
     font-size: 50px;
     left: 520px;
 }
 
 span.js1 {
-    /* display: none; */
     top: 440px;
     left: 990px;
 }
 
 .page5 p.js2 {
-    display: none;
     font-size: 48px;
     left: 505px;
 }
 
 span.js2 {
-    display: none;
     top: 440px;
     left: 980px;
 }
 
 .page5 p.js3 {
-    display: none;
     font-size: 45px;
     left: 495px;
     letter-spacing: -5px;
 }
 
 span.js3 {
-    display: none;
     top: 440px;
     left: 900px;
 }
@@ -451,7 +421,7 @@ span.js3 {
 /* ---------------page5--------------- */
 .page6 {
     position: relative;
-    top: -2000px;
+    top: -1000px;
     z-index: -9999;
     left: 240px;
     /* background-color: #3E3E3E; */
@@ -474,7 +444,7 @@ span.js3 {
 .image2 {
     position: absolute;
     top: 700px;
-    right: 220px;
+    left: 750px;
 }
 
 .image3 {
@@ -493,7 +463,7 @@ span.js3 {
 /* ------------------page6-------------------- */
 .page7 {
     position: relative;
-    top: -2200px;
+    top: -1200px;
     z-index: -9999;
     /* background-color: #3E3E3E; */
 }
@@ -519,17 +489,6 @@ span.js3 {
     font-size: 40px;
 }
 
-.page7 .js1 {
-    display: none;
-}
-
-.page7 .js2 {
-    /* display: none; */
-}
-
-.page7 .js3 {
-    display: none;
-}
 
 .page7 .gr {
     position: relative;
@@ -578,18 +537,267 @@ span.js3 {
 }
 
 .bar1 .d1 {
-   display: none;
+    display: none;
 }
+
 .bar1 .d2 {
-    left: -4px;
+    left: 160px;
 }
+
 .bar1 .d3 {
     display: none;
-    top: -18px;
-    left: 320px;
+    left: 156px;
+}
 
-<<<<<<< HEAD
->>>>>>> 13be555 (.)
-=======
->>>>>>> parent of feb12ba (3)
+/* --------------------page7------------------- */
+.page8 {
+    position: relative;
+    top: -250px;
+    z-index: -9999;
+    /* background-color: #3E3E3E; */
+}
+
+.page8 h3 {
+    position: absolute;
+    font-size: 96px;
+    left: 570px;
+    top: -80px;
+}
+
+.page8 img {
+    position: relative;
+    top: -100px;
+    left: 50px;
+}
+
+.page8 .fr {
+    position: absolute;
+    z-index: 87;
+    top: 570px;
+    left: 1115px;
+}
+
+/* --------------------page8------------------- */
+.page9 {
+    position: relative;
+    top: -150px;
+    z-index: -9999;
+    /* background-color: #3E3E3E; */
+}
+
+.page9 h3 {
+    position: relative;
+    font-size: 96px;
+    left: 650px;
+}
+
+.page9 p {
+    position: absolute;
+    top: 930px;
+    text-align: center;
+    font-size: 35px;
+    left: 610px;
+
+}
+
+.page9 img {
+    position: relative;
+    top: -130px;
+    left: 270px;
+}
+
+.page9 input {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background: #37A1F9;
+    color: #FFF;
+    font-family: "Godo B";
+    font-size: 50px;
+    top: 500px;
+    left: 500px;
+    z-index: 977;
+    border: none;
+
+}
+
+.page9 .next {
+    left: 1300px;
+}
+
+/* --------------------page9------------------- */
+.page10 {
+    position: relative;
+    top: -450px;
+    z-index: -9999;
+    /* background-color: #3E3E3E; */
+}
+
+.page10 h3 {
+    position: relative;
+    top: 680px;
+    left: 1120px;
+    font-size: 80px;
+    color: white;
+
+}
+
+.page10 p {
+    position: relative;
+    text-align: right;
+    top: 770px;
+    left: -200px;
+    color: #FFF;
+    font-size: 25px;
+    line-height: 180%;
+    font-weight: 100;
+}
+
+.page10 input {
+    position: absolute;
+    width: 246px;
+    height: 43px;
+    border-radius: 50px;
+    background: #FFF;
+    color: #FF5C5C;
+    font-family: "Godo B";
+    font-size: 27px;
+    font-weight: 400;
+    top: 450px;
+    left: 1290px;
+    border: none;
+}
+
+.page10 .big {
+    font-size: 35px;
+}
+
+.page10 img {
+    position: relative;
+    top: -450px;
+    left: 200px;
+    z-index: -444;
+}
+
+/* --------------------page10------------------- */
+.page11 {
+    position: relative;
+    top: -800px;
+    z-index: -9999;
+    /* background-color: #3E3E3E; */
+}
+
+.page11 h3 {
+    position: relative;
+    text-align: center;
+    font-size: 96px;
+}
+
+.msg h3 {
+    position: absolute;
+    font-size: 30px;
+}
+
+.msg p {
+    position: absolute;
+}
+
+.page11 img {
+    position: relative;
+    z-index: -555;
+    left: 250px;
+    top: 100px;
+}
+
+.msg1 h3 {
+    top: 310px;
+    left: 660px;
+    text-align: left;
+}
+
+.msg1 p {
+    top: 370px;
+    left: 660px;
+    text-align: left;
+}
+
+.msg2 h3 {
+    color: white;
+    top: 920px;
+    left: 920px;
+    text-align: right;
+}
+
+.msg2 p {
+    color: white;
+    top: 980px;
+    left: 800px;
+    text-align: right;
+}
+
+.page11 input {
+    position: absolute;
+    width: 493px;
+    height: 75px;
+    border-radius: 100px;
+    background: #FF6996;
+    color: #FFF;
+    font-family: "Godo B";
+    font-size: 27px;
+    border: none;
+    left: 700px;
+    top: 1650px;
+}
+
+/* --------------------page11------------------- */
+footer {
+    position: relative;
+    top: -1800px;
+    z-index: -9999;
+    /* background-color: #3E3E3E; */
+    left: -300px;
+}
+
+footer input {
+    position: absolute;
+    z-index: 9999;
+    width: 954px;
+    height: 79px;
+    border-radius: 53px;
+    background: #F9F9F9;
+    color: rgba(32, 32, 32, 0.62);
+    font-family: "Godo B";
+    font-size: 25px;
+    border: none;
+    left: 860px;
+    top: 520px;
+}
+
+.link6 {
+    position: absolute;
+    z-index: 8888888;
+    left: 1700px;
+    top: 535px;
+}
+
+.link7 {
+    position: absolute;
+    z-index: 8888898;
+    left: 1680px;
+    top: 620px;
+}
+
+.link8 {
+    position: absolute;
+    z-index: 8888898;
+    left: 1740px;
+    top: 620px;
+}
+
+.link9 {
+    position: absolute;
+    z-index: 8888898;
+    left: 1680px;
+    top: 680px;
 }
