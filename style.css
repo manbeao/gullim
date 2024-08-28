@@ -2,6 +2,7 @@ body {
     height: 11947px;
     -webkit-scrollbar-track: pink;
     -webkit-scrollbar-thumb: #FF6996;
+    z-index: -999999999999;
 }
 
 body::-webkit-scrollbar {
@@ -35,12 +36,29 @@ h3 {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    z-index: 5555;
 }
+h3:hover {
+    animation: handle 3s infinite;
+}
+@keyframes handle {
+    0% {
+        transform: scale(102%);
+    }
 
+    50% {
+        transform: scale(98%);
+    }
+
+
+    100% {
+        transform: scale(101%);
+    }
+}
 p {
     color: #202020;
     text-align: center;
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -55,7 +73,7 @@ header {
     background: #FF9CBA;
     box-shadow: 0px 2px 15.1px 0px rgba(0, 0, 0, 0.25);
     margin: auto;
-    z-index: 9999;
+    z-index: 999999999;
 }
 
 header img {
@@ -66,8 +84,26 @@ header img {
     margin-top: 10px;
     padding-top: 5px;
 }
+header img:hover {
+    animation: logoani 3s infinite;
+}
 
+@keyframes logoani {
+    0% {
+        transform: scale(110%);
+    }
+
+    50% {
+        transform: scale(80%);
+    }
+
+
+    100% {
+        transform: scale(110%);
+    }
+}
 header span {
+    position: relative;
     display: inline-block;
     color: #202020;
     font-family: 'MapoBackpacking';
@@ -93,7 +129,6 @@ nav {
 }
 
 nav .mail {
-
     background: rgba(255, 156, 186, 0.58);
     position: absolute;
     top: 0px;
@@ -101,6 +136,7 @@ nav .mail {
     width: 400px;
     height: 102px;
     z-index: 99;
+    transition: all 0.7s;
 }
 
 .call {
@@ -111,6 +147,7 @@ nav .mail {
     width: 400px;
     height: 102px;
     z-index: 100;
+    transition: all 0.7s;
 }
 
 nav div p {
@@ -274,13 +311,15 @@ main button {
     position: relative;
     top: -1000px;
     height: auto;
-    z-index: -9999;
+    /* z-index: -9999; */
+    /* background-color: #3E3E3E; */
 }
 
 .page4 .bg2 {
-    position: relative;
-    left: -264px;
-    z-index: -33;
+    position: absolute;
+    left: 180px;
+    top: 250px;
+    z-index: -3;
 }
 
 .page4 h3 {
@@ -292,62 +331,129 @@ main button {
     font-size: 96px;
 }
 
-.page4 p {
-    position: relative;
+.page4 #nextImg1{
+    position: absolute;
     text-align: left;
-    left: 460px;
-    top: 520px;
+    left: -400px;
+    top: 220px;
+    line-height: 200%;
+}
+.page4 #nextImg2{
+    position: absolute;
+    text-align: left;
+    left: -400px;
+    top: 220px;
+    line-height: 200%;
+}
+.page4 #nextImg3{
+    position: absolute;
+    text-align: left;
+    left: -400px;
+    top: 220px;
+    line-height: 200%;
+}
+.page4 #nextImg4{
+    position: absolute;
+    text-align: left;
+    left: -400px;
+    top: 220px;
     line-height: 200%;
 }
 
-.bold {
-    position: relative;
+.page4 p.bold {
+    position: absolute;
     color: #202020;
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    margin-top: 20px;
     line-height: 144.2%;
+    top: 350px;
+    left: -400px;
 }
 
 .page4 .image1 {
     position: absolute;
     top: 110px;
-    left: 190px;
+    left: 200px;
+    z-index: 777777;
 }
 
 .page4 input {
-    position: relative;
+    position: absolute;
     width: 127px;
     height: 47px;
     border-radius: 100px;
     background: #FF6996;
-    top: -200px;
+    top: 850px;
     left: 365px;
     color: #FFF;
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 27px;
     border: none;
     margin-left: 93px;
+    z-index: 9999999;
 }
-
+#next{
+    left: 570px;
+}
 .sp {
     position: absolute;
     top: 414px;
-    left: 894px;
+    left: 880px;
     z-index: 9999999;
 }
 
+.tr1{
+    transform: translateX(0vw);
+}
+.tr2{
+    transform: translateX(-100vw);
+}
+.tr3{
+    transform: translateX(-200vw);
+}
+.tr4{
+    transform: translateX(-300vw);
+}
+.slide1{
+    position: absolute;
+    top: 400px;
+    left: 860px;
+    z-index: 11;
+
+}
+.slide2{
+    position: absolute;
+    top: 400px;
+    left: 860px;
+    z-index: 22;
+}
+.slide3{
+    position: absolute;
+    top: 400px;
+    left: 860px;
+    z-index: 33;
+}
+.slide4{
+    position: absolute;
+    top: 400px;
+    left: 860px;
+    z-index: 44;
+}
 /* -------------------page4------------------- */
 .page5 {
     height: auto;
     position: relative;
-    top: -1000px;
-    z-index: -9999;
+    top: -100px;
 
 }
-
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
 .page5 .bg3 {
     position: relative;
     left: 220px;
@@ -380,7 +486,7 @@ main button {
     position: absolute;
     color: #202020;
     text-align: right;
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 25px;
     font-weight: 400;
     line-height: 41px;
@@ -421,8 +527,7 @@ span.js3 {
 /* ---------------page5--------------- */
 .page6 {
     position: relative;
-    top: -1000px;
-    z-index: -9999;
+    top: -200px;
     left: 240px;
     /* background-color: #3E3E3E; */
 }
@@ -457,14 +562,13 @@ span.js3 {
     position: absolute;
     left: -240px;
     top: 400px;
-    z-index: -888;
+    z-index: -88;
 }
 
 /* ------------------page6-------------------- */
 .page7 {
     position: relative;
-    top: -1200px;
-    z-index: -9999;
+    top: -400px;
     /* background-color: #3E3E3E; */
 }
 
@@ -498,7 +602,7 @@ span.js3 {
     text-align: right;
     color: #202020;
     text-align: right;
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -509,13 +613,14 @@ span.js3 {
     position: absolute;
     top: 200px;
     left: 20px;
-    z-index: -1111;
+    z-index: -11;
 }
 
 .page7 .b1 {
     position: absolute;
     top: 350px;
     left: 300px;
+    z-index: 66;
 }
 
 .bar1 {
@@ -552,8 +657,8 @@ span.js3 {
 /* --------------------page7------------------- */
 .page8 {
     position: relative;
-    top: -250px;
-    z-index: -9999;
+    top: 550px;
+    /* z-index: -9999; */
     /* background-color: #3E3E3E; */
 }
 
@@ -580,8 +685,8 @@ span.js3 {
 /* --------------------page8------------------- */
 .page9 {
     position: relative;
-    top: -150px;
-    z-index: -9999;
+    top: 570px;
+    /* z-index: -9999; */
     /* background-color: #3E3E3E; */
 }
 
@@ -613,7 +718,7 @@ span.js3 {
     border-radius: 50px;
     background: #37A1F9;
     color: #FFF;
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 50px;
     top: 500px;
     left: 500px;
@@ -629,14 +734,14 @@ span.js3 {
 /* --------------------page9------------------- */
 .page10 {
     position: relative;
-    top: -450px;
-    z-index: -9999;
+    top: 700px;
+    /* z-index: -9999; */
     /* background-color: #3E3E3E; */
 }
 
 .page10 h3 {
     position: relative;
-    top: 680px;
+    top: 525px;
     left: 1120px;
     font-size: 80px;
     color: white;
@@ -644,10 +749,9 @@ span.js3 {
 }
 
 .page10 p {
-    position: relative;
-    text-align: right;
-    top: 770px;
-    left: -200px;
+    position: absolute;
+    top: 820px;
+    left: 1340px;
     color: #FFF;
     font-size: 25px;
     line-height: 180%;
@@ -661,15 +765,22 @@ span.js3 {
     border-radius: 50px;
     background: #FFF;
     color: #FF5C5C;
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 27px;
     font-weight: 400;
-    top: 450px;
+    top: 300px;
     left: 1290px;
     border: none;
 }
 
+.page10 .fri {
+    top: 780px;
+    left: 1380px;
+}
+
 .page10 .big {
+    top: 720px;
+    left: 1420px;
     font-size: 35px;
 }
 
@@ -683,14 +794,14 @@ span.js3 {
 /* --------------------page10------------------- */
 .page11 {
     position: relative;
-    top: -800px;
-    z-index: -9999;
+    top: 330px;
+    /* z-index: -9999; */
     /* background-color: #3E3E3E; */
 }
 
 .page11 h3 {
     position: relative;
-    text-align: center;
+    left: 550px;
     font-size: 96px;
 }
 
@@ -743,7 +854,7 @@ span.js3 {
     border-radius: 100px;
     background: #FF6996;
     color: #FFF;
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 27px;
     border: none;
     left: 700px;
@@ -753,8 +864,8 @@ span.js3 {
 /* --------------------page11------------------- */
 footer {
     position: relative;
-    top: -1800px;
-    z-index: -9999;
+    top: 300px;
+    /* z-index: -9999; */
     /* background-color: #3E3E3E; */
     left: -300px;
 }
@@ -767,7 +878,7 @@ footer input {
     border-radius: 53px;
     background: #F9F9F9;
     color: rgba(32, 32, 32, 0.62);
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 25px;
     border: none;
     left: 860px;
