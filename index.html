@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no,shrink-to-fit=no">
     <title>지울림</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
@@ -190,38 +192,42 @@
     <!-- -----------/page3----------- -->
     <div class="page4" id="page4">
         <h3>활동 사진</h3>
-        <div class="slideImg">
-            <div class="slide1 slide5 tr1">
-                <p class="nextImg1" id="nextImg1">
-                    <지울림>의 첫 만남 오리엔테이션 사진이다. <br>
-                        지울림의 모든 부원과 임원단이 모였다.
-                </p>
-                <p class="bold nextImg1">2024년 4월 16일</p>
-                <img src="./image/img5-6.png" class="image8 nextImg1" alt="활동 사진 페이지 이미지">
-            </div>
-            <div class="slide2 slide5 tr2">
-                <p class="nextImg2" id="nextImg2">
-                    2023년 지울림 활동의 결과물이다. <br>
-                    옆의 사진은 제작 후 배보처에서 찍은 사진이다.
-                </p>
-                <p class="bold nextImg2">2023년 12월 11일</p>
-                <img src="./image/img5-3.png" class="image5 nextImg2" alt="활동 사진 페이지 이미지">
-            </div>
-            <div class="slide3 slide5 tr3">
-                <p class="nextImg3" id="nextImg3">
-                    그동안의 지울림이 출판했던 잡지들이다. <br>
-                    2011년부터 정기적으로 발간 되고 있다.
-                </p>
-                <p class="bold nextImg3">2024년 6월 30일</p>
-                <img src="./image/img5-4.png" class="image6 nextImg3" alt="활동 사진 페이지 이미지">
-            </div>
-            <div class="slide4 slide5 tr4">
-                <p class="nextImg4" id="nextImg4">
-                    지울림 잡지의 내부 페이지다. <br>
-                    최근 유행했던 엠비티아이 관련 내용을 다루고 있다.
-                </p>
-                <p class="bold nextImg4">2023년 8월 9일</p>
-                <img src="./image/img5-5.png" class="image7 nextImg4" alt="활동 사진 페이지 이미지">
+        <div class="slideWrap">
+            <div class="slideImg">
+                <div class="sliderInner">
+                    <div class="slide1 slide5 tr1">
+                        <p class="nextImg1" id="nextImg1">
+                            <지울림>의 첫 만남 오리엔테이션 사진이다. <br>
+                                지울림의 모든 부원과 임원단이 모였다.
+                        </p>
+                        <p class="bold nextImg1">2024년 4월 16일</p>
+                        <img src="./image/img5-6.png" class="image8 nextImg1" alt="활동 사진 페이지 이미지">
+                    </div>
+                    <div class="slide2 slide5 tr2">
+                        <p class="nextImg2" id="nextImg2">
+                            2023년 지울림 활동의 결과물이다. <br>
+                            옆의 사진은 제작 후 배보처에서 찍은 사진이다.
+                        </p>
+                        <p class="bold nextImg2">2023년 12월 11일</p>
+                        <img src="./image/img5-3.png" class="image5 nextImg2" alt="활동 사진 페이지 이미지">
+                    </div>
+                    <div class="slide3 slide5 tr3">
+                        <p class="nextImg3" id="nextImg3">
+                            그동안의 지울림이 출판했던 잡지들이다. <br>
+                            2011년부터 정기적으로 발간 되고 있다.
+                        </p>
+                        <p class="bold nextImg3">2024년 6월 30일</p>
+                        <img src="./image/img5-4.png" class="image6 nextImg3" alt="활동 사진 페이지 이미지">
+                    </div>
+                    <div class="slide4 slide5 tr4">
+                        <p class="nextImg4" id="nextImg4">
+                            지울림 잡지의 내부 페이지다. <br>
+                            최근 유행했던 엠비티아이 관련 내용을 다루고 있다.
+                        </p>
+                        <p class="bold nextImg4">2023년 8월 9일</p>
+                        <img src="./image/img5-5.png" class="image7 nextImg4" alt="활동 사진 페이지 이미지">
+                    </div>
+                </div>
             </div>
         </div>
         <input type="button" name="pre" id="pre" value="이전">
@@ -232,61 +238,68 @@
     </div>
     <!-- --------------------------이미지 이전, 다음 버튼 script------------------------- -->
     <script>
-        const $slide1 = document.querySelector('.slide1');
-        const $slide2 = document.querySelector('.slide2');
-        const $slide3 = document.querySelector('.slide3');
-        const $slide4 = document.querySelector('.slide4');
-        const $slide = document.querySelectorAll('.slide5');
-        const backBtn = document.getElementById("pre");
-        console.log(backBtn)    // 됨
-        console.log($slide)
-        const nextBtn = document.querySelector("#next")
-        const slideImg = document.querySelector('.slideImg')
-        backBtn.addEventListener('click', () => {
-            if ($slide.classList = 'tr1') {
-                $slide4.classList.toggle('dn'),
-                    [...$slide].forEach($slide => $slide.classList.replace('tr1', 'tr4'))
-            }
-        });
-        backBtn.addEventListener('click', () => {
-            if ($slide.classList = 'tr2') {
-                $slide4.classList.toggle('dn'),
-                    [...$slide].forEach($slide => $slide.classList.replace('tr2', 'tr1'))
-            }
-        });
-        backBtn.addEventListener('click', () => {
-            if ($slide.classList = 'tr3') {
-                [...$slide].forEach($slide => $slide.classList.replace('tr3', 'tr2'))
-            }
-        });
-        backBtn.addEventListener('click', () => {
-            if ($slide.classList = 'tr4') {
-                $slide1.classList.toggle('dn'),
-                    [...$slide].forEach($slide => $slide.classList.replace('tr4', 'tr3'))
-            }
-        });
-        // ------------------backBtn-----------------------------------------------
-        nextBtn.addEventListener('click', () => {
-            if ($slide.classList = 'tr4') {
-                [...$slide].forEach($slide => $slide.classList.replace('tr4', 'tr3'))
-            }
-        });
-        nextBtn.addEventListener('click', () => {
-            if ($slide.classList = 'tr3') {
-                [...$slide].forEach($slide => $slide.classList.replace('tr3', 'tr2'))
-            }
-        });
-        nextBtn.addEventListener('click', () => {
-            if ($slide.classList = 'tr2') {
-                [...$slide].forEach($slide => $slide.classList.replace('tr2', 'tr1'))
-            }
-        });
-        nextBtn.addEventListener('click', () => {
-            if ($slide.classList = 'tr4') {
-                [...$slide].forEach($slide => $slide.classList.replace('tr1', 'tr4'))
-            }
+            const $slideMove = document.getElementsByClassName('slide5');
+            let currentIndex = 0;
+
+            // function $slideMove(slide,index) {
+            //     slide.classList.toggle('tr1' === currentIndex)
+            //     slide.classList.toggle('tr2' === currentIndex + 1) % $slideMove.length
+            //     slide.classList.toggle('tr3' === currentIndex + 2) % $slideMove.length
+            //     slide.classList.toggle('tr4' === currentIndex + 3) % $slideMove.length
+            // };
+            // $slideMove.forEach()
+
+
+           ($slideMove.children).forEach(function(slide, index){
+                slide.classList.toggle('tr1'=== currentIndex)
+                slide.classList.toggle('tr2'=== currentIndex+ 1)%$slideMove.length
+                slide.classList.toggle('tr3'=== currentIndex +2)%$slideMove.length
+                slide.classList.toggle('tr4'=== currentIndex +3)%$slideMove.length
         });
 
+            const $pre = document.getElementById('pre');
+            const $next = document.getElementById('next');
+            $pre.addEventListener('click', () => { currentIndex = (currentIndex - 1) % $slideMove.length },
+                slidesmove());
+            $next.addEventListener('click', () => { currentIndex = (currentIndex + 1) % $slideMove.length },
+                slidesmove());
+
+        // const sliderWrap = document.querySelector(".slideWrap");
+        // const sliderImg = document.querySelector(".slideImg"); //보여지는 영역
+        // const sliderInner = document.querySelector(".slideInner"); //움직이는 영역
+        // const slider = document.querySelectorAll(".slide5"); //개별 이미지
+        // const sliderBtnPrev = document.querySelector("#pre");		//왼쪽버튼
+        // const sliderBtnNext = document.querySelector("#next");		//오른쪽버튼
+
+        // let currentIndex = 0;		//현재 이미지
+        // let sliderCount = slider.length;	//이미지 갯수
+        // console.log('-----------------')
+        // console.log(sliderCount);
+        // let sliderWidth = sliderImg.offsetWidth;	//이미지 가로값
+        // console.log(sliderWidth);
+
+        // // 이미지 총 길이 넣기
+        // sliderInner.style.width = (sliderWidth * sliderCount) + "px";
+        // // 이미지 움직이는 영역
+        // function gotoSlider(num) {
+        //     sliderInner.style.transition = "all 400ms";
+        //     sliderInner.style.transform = "translateX(" + -sliderWidth * num + "px)";
+        //     currentIndex = num;
+        // }
+
+        // // 왼쪽버튼 클릭
+        // sliderBtnPrev.addEventListener("click", () => {
+        //     let nextIndex = (currentIndex + sliderCount - 1) % sliderCount
+        //     gotoSlider(nextIndex);
+        //     // 876543210 876543120
+        // })
+
+        // // 오른쪽버튼 클릭
+        // sliderBtnNext.addEventListener("click", () => {
+        //     let nextIndex = (currentIndex + 1) % sliderCount
+        //     gotoSlider(nextIndex);
+        //     // 01234...8 01234...8
+        // });
 
 
     </script>
@@ -417,13 +430,16 @@
         <input type="button" value=">" class="next">
         <img src="./image/img10.png" alt="수상내역 페이지">
     </div>
+    <script>
+
+    </script>
     <!-- -----------/page9----------- -->
     <div class="page10" id="page10">
         <h3>지울림 편집장 소개</h3>
         <p class="big">2023.03 - 2025.02</p>
         <p class="fri">이름 : 김나연, 학번 : 202201835</p>
         <p>이메일주소 : kny5076@naver.com</p>
-        <input type="button" value="더 보러 가기" class="link1">
+        <a href="./introducePage.html"><input type="button" value="더 보러 가기" class="link1"></a>
         <img src="./image/img11.png" alt="편집장 소개 페이지">
     </div>
     <!-- -----------/page10----------- -->
@@ -458,9 +474,11 @@
     <footer>
         <input type="email" value="&nbsp;&nbsp;&nbsp;이메일 주소를 입력하고 지울림의 최신 소식을 받아보세요!">
         <img src="./image/img13-1.png" class="link6" alt="지울림 이메일 링크">
-        <img src="./image/insta.png" class="link7" alt="인스타그램" class="link3">
-        <img src="./image/facebook.png" class="link8" alt="페이스북" class="link4">
-        <img src="./image/youtube.png" class="link9" alt="유투브" class="link5">
+        <a href="https://www.instagram.com/seoiluniv/"><img src="./image/insta.png" class="link7" alt="인스타그램"></a>
+        <a href="https://www.facebook.com/seoiluniversity/"><img src="./image/facebook.png" class="link8"
+                alt="페이스북"></a>
+        <a href="https://www.youtube.com/channel/UCyL95ai0tHvmtRzBLDmYLUQ"><img src="./image/youtube.png" class="link9"
+                alt="유투브"></a>
         <img src="./image/img13.png" alt="학과 정보">
     </footer>
 </body>
