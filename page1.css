@@ -156,136 +156,71 @@ nav img {
     margin-top: 18px;
 }
 
-/* ----------------qickmenu--------------- */
-.page1 p {
+/* ---------------------nav--------------- */
+
+.page1 .group1 {
     position: relative;
-    left: -375px;
-    top: 710px;
-    color: #FFF;
-    -webkit-text-stroke-width: 0.5;
-    -webkit-text-stroke-color: #FFF;
-    font-family: 'MapoBackpacking';
-    font-size: 40px;
-    transition: all 0.7s;
+    top: 500px;
+    left: 700px;
 }
 
-.page1 p:hover {
-    color: #202020;
-}
-
-/* ------------------page1------------------- */
-
-.page2 #h31 {
-    position: absolute;
-    top: 160px;
-    left: 690px;
-    font-size: 80px;
-}
-
-.page2 #h32 {
-    position: absolute;
-    top: 335px;
-    left: 810px;
-    font-size: 50px;
-    font-weight: 500;
-}
-
-.page2 #h33 {
+.page1 .group1 h3 {
     position: relative;
-    top: 820px;
-    left: 810px;
-    font-size: 50px;
-    font-weight: 500;
-}
-
-.page2 p {
-    position: absolute;
     text-align: left;
-    top: 410px;
-    left: 815px;
+    font-size: 30px;
 }
 
-.page2 button {
+.page1 .group1 p {
     position: relative;
-    width: 188px;
-    height: 90px;
-    border-radius: 50px;
-    background: #FF9CBA;
-    box-shadow: 0px 4px 7.3px 0px rgba(0, 0, 0, 0.25);
-    color: #202020;
-    text-align: center;
-    font-family: "Godo";
+    text-align: left;
     font-size: 20px;
     line-height: 144.2%;
-    border: none;
-    top: 870px;
-    left: 450px;
-    margin-left: 20px;
-    transition: all 0.7s;
 }
 
-.page2 button.num3 {
-    top: 855px;
-}
-
-.page2 button.num4 {
-    top: 855px;
-}
-
-.page2 button:hover {
-    background: #FF6996;
+.page1 .group2 {
+    position: relative;
+    top: 750px;
     color: white;
-    top: 840px;
+    left: -700px;
 }
 
-.page2 button.num6 {
-    top: 970px;
-    left: -500px;
-}
-
-.page2 button.num7 {
-    top: 970px;
-    left: -500px;
-}
-
-.page2 button.num8 {
-    top: 970px;
-    left: -500px;
-}
-
-.page2 button.num9 {
-    top: 880px;
-    left: 1210px;
-}
-
-.page2 button.num10:hover {
-    background: #FF6996;
+.page1 .group2 h3 {
+    position: relative;
+    text-align: right;
+    font-size: 30px;
     color: white;
-    top: 960px;
 }
 
-.page2 button.num10.num9:hover {
-    background: #FF6996;
+.page1 .group2 p {
+    position: relative;
+    text-align: right;
+    font-size: 20px;
+    line-height: 144.2%;
     color: white;
-    top: 860px;
+}
+.page1 .div{
+    position: relative;
+    top: 700px;
+}
+.page1 .group4 {
+top: 780px;
+}
+.page1 .group5 {
+top: 1230px;
+}
+.page1 .group6 {
+top: 1520px;
 }
 
-/*=--------------------page2------------------- */
-
-.page3 p {
+/* --------------------page1------------------ */
+.page2 img {
     position: absolute;
-    text-align: center;
-    font-size: 22px;
-    line-height: 179%;
-    top: 1320px;
-    left: 650px;
-}
-.page3 img{
-    position: absolute;
-    top: 30px;
-    left: -245px;
+    top: 230px;
+    left: -180px;
     z-index: -1;
 }
+
+/* ------------------page2----------------- */
 footer input {
     position: absolute;
     width: 954px;
@@ -296,15 +231,15 @@ footer input {
     font-family: "Godo";
     font-size: 25px;
     border: none;
-    left: 640px;
-    top: 1770px;
+    left: 610px;
+    top: 4400px;
 }
 
 .link6 {
     position: absolute;
     z-index: 8888888;
     left: 1470px;
-    top: 1785px;
+    top: 4415px;
 
 }
 
