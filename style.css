@@ -3,11 +3,10 @@ html {
     user-select: none;
     /* width:1930px; 
     min-width:1200px!important; */
+    transition: all 0.7s;
 }
 
 body {
-    width: 100%;
-    ;
     height: 11947px;
     -webkit-scrollbar-track: pink;
     -webkit-scrollbar-thumb: #FF6996;
@@ -230,7 +229,7 @@ main input {
     border: none;
     left: 250px;
     color: #FFF;
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 27px;
     letter-spacing: 4.32px;
 }
@@ -244,7 +243,7 @@ main button {
     background: #FF6996;
     border: none;
     color: #FFF;
-    font-family: "Godo B";
+    font-family: "Godo";
     font-size: 27px;
     letter-spacing: 4.32px;
     left: 500px;
@@ -672,17 +671,16 @@ span.js3 {
     background: #1D611E;
 }
 
-.bar1 .d1 {
-    display: none;
-}
 
+.bar1 .d1 {
+    left: 0px;
+}
 .bar1 .d2 {
-    left: 160px;
+    left: 154px;
 }
 
 .bar1 .d3 {
-    display: none;
-    left: 156px;
+    left: 318px;
 }
 
 /* --------------------page7------------------- */
@@ -758,8 +756,47 @@ span.js3 {
 
 }
 
+.page9 .pre:hover {
+    animation: viewMore 1.5s infinite;
+    background-color: #007fe7;
+}
+
+@keyframes viewMore {
+    0% {
+        transform: scale(180%);
+    }
+
+    50% {
+        transform: scale(95%);
+    }
+
+
+    100% {
+        transform: scale(180%);
+    }
+}
+
 .page9 .next {
     left: 1300px;
+}
+.page9 .next:hover {
+    animation: viewMore 1.5s infinite;
+    background-color: #007fe7;
+}
+
+@keyframes viewMore {
+    0% {
+        transform: scale(180%);
+    }
+
+    50% {
+        transform: scale(95%);
+    }
+
+
+    100% {
+        transform: scale(180%);
+    }
 }
 
 /* --------------------page9------------------- */
@@ -910,12 +947,30 @@ span.js3 {
     left: 700px;
     top: 1650px;
 }
+.page11 input {
+    animation: viewMore 2s infinite;
+}
+
+@keyframes viewMore {
+    0% {
+        transform: scale(115%);
+    }
+
+    50% {
+        transform: scale(100%);
+    }
+
+
+    100% {
+        transform: scale(115%);
+    }
+}
 
 /* --------------------page11------------------- */
 footer {
     position: relative;
     top: 300px;
-    /* z-index: -9999; */
+    z-index: -9999;
     /* background-color: #3E3E3E; */
     left: -300px;
 }
